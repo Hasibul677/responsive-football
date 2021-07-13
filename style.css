@@ -59,7 +59,12 @@ ul{
     width: 556px;
     height: 438px;
     margin-left: 102px;
-    margin-top: 153px;
+    margin-top: 143px;
+    overflow: hidden;
+}
+.banner img:hover{
+    transform: scale(1.1) skew(-30deg);
+    transition: transform 2s ease ;
 }
 .link-button{
     background-color: #e02c6d;
@@ -67,6 +72,10 @@ ul{
     padding: 7px;
     margin-left: 156px;
     margin-top: 27px;
+    color: white;
+}
+.link-button:hover{
+    background-color: blue;
     color: white;
 }
 /* style of players part */
@@ -89,6 +98,11 @@ ul{
     width: 300px;
     height: 256px;
     padding: 5px;
+    overflow: hidden;
+}
+.player img:hover{
+    transform: scale(1.1);
+    transition: transform 2s ease ;
 }
 .player-details{
     width: 300px;
@@ -124,6 +138,22 @@ margin: 0;
 .op-button{
     margin: 0;
 }
+/* style of partners part */
+.partners{
+    margin-top: 100px;
+    text-align: center;
+}
+.partners-name{
+    box-shadow: 10px 10px 40px gray;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 30px 10px;
+    align-items: center;
+    justify-content: center;
+    margin: 10px 50px;
+    padding: 20px 0;
+    padding-left:165px;
+}
 /* style of footer part */
 footer{
     margin-top: 158px;
@@ -136,5 +166,7 @@ footer{
 .social-logo .social{
     width: 50px;
     height: 32px;
- 
+}
+.social-logo .social:hover{
+    color: blue;
 }
