@@ -212,7 +212,7 @@ footer{
 @media only screen and (max-width:688px) {
     /* mobile query for header part */
     header{
-        margin-bottom: 560px;
+        margin-bottom: 677px;
     }
     nav, .header-part{
         width: 100%;
@@ -339,7 +339,6 @@ footer{
         grid-template-columns: repeat(2, 1fr);
         margin: 0;
         padding: 0;
-        padding-left: 50px;
         align-items: center;
     }
     /* tab query for optional part */
