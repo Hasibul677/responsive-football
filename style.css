@@ -271,6 +271,7 @@ footer{
         margin-left: 10px;
     }
     .match-photo img{
+        width: 100%;
         margin-top: 100px;
     }
     /* mobile query for partners part */
