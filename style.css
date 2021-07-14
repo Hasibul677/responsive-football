@@ -229,11 +229,12 @@ footer{
    .banner-info h1{
        width: 100%;
        margin-left: 0;
+       margin-bottom: 150px;
    }
    .banner-info .link-button{
+    
       margin-left: 10px;
    }
-   .link-button{margin-top: 100px;}
    .banner img{
        width: 100%;
        margin-left: 0;
