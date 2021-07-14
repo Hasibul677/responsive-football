@@ -44,6 +44,7 @@ ul{
 
 /* style of hero part */
 .hero-part{
+    background-color: #2d25a0;
     display: flex;
 }
 .banner-info h1{
@@ -81,11 +82,11 @@ ul{
 /* style of players part */
 .player-part{
     width: 1050px;
+    margin-top: 100px;
 }
 .players{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(4, 1fr);
     grid-gap: 27px 30px;
     margin: 0 180px;
 }
@@ -123,9 +124,9 @@ ul{
     margin-top: 200px;
 }
 .highlight-info h3{
-font-size: 48px;
-font-weight: 700;
-margin: 0;
+    font-size: 48px;
+    font-weight: 700;
+    margin: 0;
 }
 .match-photo{
     margin-left: 66px;
@@ -169,4 +170,76 @@ footer{
 }
 .social-logo .social:hover{
     color: blue;
+}
+
+/* Style for Media Query */
+
+/* media query for mobile */
+@media only screen and (max-width:688px) {
+    /* mobile query for header part */
+    header{
+        margin-bottom: 560px;
+    }
+    nav, .header-part{
+        width: 100%;
+        margin: 0;
+        
+    }
+    .logout li{
+        padding: 0;
+        margin: 0;
+
+    }
+    nav .navigation-part li{
+        width: 100%;
+        margin-right: 10px;
+    } 
+/* mobile query for hero part */
+   .hero-part{
+       flex-direction: column;
+   }
+   .banner-info h1{
+       width: 100%;
+       margin-left: 0;
+   }
+   .banner-info .link-button{
+      margin-left: 10px;
+   }
+   .banner img{
+       width: 100%;
+       margin-left: 0;
+   }
+   /* mobile query for players part */
+   .player-part{
+       width: 100%;
+   }
+    .players{
+        grid-template-columns: repeat(1, 1fr);
+        margin: 0;
+        padding: 0;
+        padding-left: 50px;
+    }
+    .player-part .player-frame{
+        width: 10%;
+    }
+    /* mobile query for optional part */
+    .optional-part, .match-photo{
+       display: flex;
+       flex-direction: column;
+        margin-left: 10px;
+        margin-top: 10px;
+    }
+    .highlight-info{
+        margin-left: 10px;
+    }
+    /* mobile query for partners part */
+    .partners .partners-name{
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+    }
+    footer{
+        width: 100%;
+    }
+    
 }
