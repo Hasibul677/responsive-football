@@ -280,6 +280,11 @@ footer{
         padding: 0;
     }
     /* mobile query for subscribe part */
+    .subscribe iframe {
+        width:"auto !important"; 
+        height:"auto !important";
+
+    }
     .subscribe .input-type{
         display: flex;
         flex-direction: column;
