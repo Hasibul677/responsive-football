@@ -253,7 +253,6 @@ footer{
         grid-template-columns: repeat(1, 1fr);
         margin: 0;
         padding: 0;
-        padding-left: 50px;
     }
     /* mobile query for optional part */
     .optional-part, .match-photo{
