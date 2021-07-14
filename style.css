@@ -270,6 +270,9 @@ footer{
     .highlight-info{
         margin-left: 10px;
     }
+    .match-photo img{
+        margin-top: 100px;
+    }
     /* mobile query for partners part */
     .partners .partners-name{
         display: flex;
