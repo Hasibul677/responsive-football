@@ -253,6 +253,7 @@ footer{
         grid-template-columns: repeat(1, 1fr);
         margin: 0;
         padding: 0;
+        align-items: center;
     }
     /* mobile query for optional part */
     .optional-part, .match-photo{
