@@ -10,7 +10,6 @@ header{
     background-color: #2d25a0;
     background-size: 100%;
     height: 677px;
-    margin-bottom: 70px;
 }
 nav{
     width: 1160px;
@@ -60,7 +59,7 @@ ul{
     width: 556px;
     height: 438px;
     margin-left: 102px;
-    margin-top: 143px;
+    margin-top: 153px;
     overflow: hidden;
 }
 .banner img:hover{
@@ -145,7 +144,7 @@ ul{
     text-align: center;
 }
 .partners-name{
-    box-shadow: 10px 10px 40px gray;
+    box-shadow: 5px 5px 20px rgb(224, 220, 220);
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 30px 10px;
@@ -155,6 +154,29 @@ ul{
     padding: 20px 0;
     padding-left:165px;
 }
+/* style of subscribe part */
+.subscribe{
+    text-align: center;
+    margin-bottom: 50px;
+    margin-top: 100px;
+}
+.input-type input{
+    padding: 15px 3px;
+    border: 2px solid #ccc;
+    margin-left: 5px;
+}
+.subscribe-title{
+    border: 3px solid black;
+    border-radius: 2px;
+    padding: 8px;
+    margin-left: 2%;
+    text-decoration: none;
+}
+.subscribe-title:hover{
+    color: white;
+    background-color: blue;
+}
+
 /* style of footer part */
 footer{
     margin-top: 158px;
@@ -238,8 +260,118 @@ footer{
         flex-direction: column;
         padding: 0;
     }
+    /* mobile query for subscribe part */
+    .subscribe .input-type{
+        display: flex;
+        flex-direction: column;
+    }
+    .input-type input, .subscribe-title{
+        margin: 10px;
+    } 
     footer{
         width: 100%;
     }
     
+}
+/* media query for tab */
+@media only screen and (min-width: 688px) and (max-width: 992px) {
+    /* tab query for header part */
+    header{
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 560px;
+    }
+    nav, .header-part{
+        width: 100%;
+        margin: 0;
+        
+    }
+    .logout li{
+        padding: 0;
+        margin: 0;
+
+    }
+    nav .navigation-part li{
+        width: 100%;
+        margin-right: 10px;
+    } 
+/* tab query for hero part */
+   .hero-part{
+       flex-direction: column;
+       align-items: center;
+   }
+   .banner-info h1{
+       width: 100%;
+       margin-left: 0;
+   }
+   .banner-info .link-button{
+      margin-left: 10px;
+   }
+   .banner img{
+       width: 100%;
+       margin-left: 0;
+   }
+   /* tab query for players part */
+   .player-part{
+       width: 100%;
+   }
+    .players{
+        grid-template-columns: repeat(2, 1fr);
+        margin: 0;
+        padding: 0;
+        padding-left: 50px;
+        align-items: center;
+    }
+    .player-part .player-frame{
+        width: 10%;
+    }
+    /* tab query for optional part */
+    .optional-part, .match-photo{
+       display: flex;
+       flex-direction: column;
+        margin-left: 10px;
+        margin-top: 20px;
+        align-items: center;
+    }
+    .highlight-info{
+        margin-left: 10px;
+    }
+    /* tab query for partners part */
+    .partners .partners-name{
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+    }
+    /* tab query for subscribe part */
+    .subscribe .input-type{
+        display: flex;
+        flex-direction: column;
+    }
+    .input-type input, .subscribe-title{
+        margin: 10px;
+    } 
+
+    footer{
+        width: 100%;
+    }
+    
+}
+/* media query for Desktop */
+@media only screen and (min-width: 992px){
+    
+    /* tab query for players part */
+   .player-part{
+    width: 100%;
+}
+ .players{
+     grid-template-columns: repeat(3, 1fr);
+     margin: 0;
+     padding: 0;
+     padding-left: 50px;
+     align-items: center;
+ }
+ .player-part .player-frame{
+     width: 10%;
+ }
+
 }
