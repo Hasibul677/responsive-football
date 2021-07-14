@@ -160,6 +160,12 @@ ul{
     padding: 20px 0;
     padding-left:165px;
 }
+.partners-name img{
+    border: 2px solid red;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 10px 10px 40px gray;
+}
 /* style of subscribe part */
 .subscribe{
     text-align: center;
